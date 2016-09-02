@@ -84,8 +84,8 @@ script:
 #  - qmake -spec ${USING_QT_MKSPEC} "CONFIG+= ${BUILD_TYPE}" qtreportslib_tests.pro
 #  - make -j$(nproc)
 #  - ./qtreportslib_tests
-  - >
-    if [ "$BUILD_TYPE" = "coverage" ]; then
+#  - >
+    #if [ "$BUILD_TYPE" = "coverage" ]; then
       #cd "$TRAVIS_BUILD_DIR"
       #git clone https://github.com/linux-test-project/lcov
       #cd lcov
@@ -94,11 +94,11 @@ script:
       #lcov --version
       #lcov --capture --directory $TRAVIS_BUILD_DIR/qtreportslib --output-file coverage.info
       #lcov --remove coverage.info --output-file coverage.info "*moc_*.cpp"
-    fi
+    #fi
 
 after_success:
-  - > 
-    if [ "$BUILD_TYPE" = "coverage" ]; then
+ # - > 
+ #   if [ "$BUILD_TYPE" = "coverage" ]; then
       #ruby --version
       #lcoveralls --root . --retry-count 5 --token "${COVERALLS_IO_TOKEN}" coverage.info
       # Auto documentation generation
@@ -124,4 +124,4 @@ after_success:
       #git config --global push.default simple
       #git push -f -q https://havendv:$GITHUB_API_KEY@github.com/PO-21/PO-21.github.io > /dev/null
       #cd "$TRAVIS_BUILD_DIR"
-    fi
+ #   fi

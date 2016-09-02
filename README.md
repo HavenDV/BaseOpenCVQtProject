@@ -1,4 +1,4 @@
-# BaseOpenCVQtProject [![Language](https://img.shields.io/badge/language-C++11-blue.svg)](https://github.com/PO-21/QtReports/search?l=cpp) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/PO-21/QtReports/blob/master/LICENSE.txt) [![Requirements](https://img.shields.io/badge/requirements-OpenCV3+Qt5-red.svg)](https://github.com/PO-21/QtReports/blob/master/CMakeLists.txt)
+# BaseOpenCVQtProject [![Language](https://img.shields.io/badge/language-C++11-blue.svg)](https://github.com/HavenDV/BaseOpenCVQtProject/search?l=cpp) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/HavenDV/BaseOpenCVQtProject/blob/master/LICENSE.txt) [![Requirements](https://img.shields.io/badge/requirements-OpenCV3+Qt5-red.svg)](https://github.com/HavenDV/BaseOpenCVQtProject/blob/master/CMakeLists.txt)
 Base OpenCV 3 Project with tests, doc and examples.
 
 Branches
@@ -6,8 +6,8 @@ Branches
 
 master (stable) | develop (unstable)
 --------------- | -----------------
-[![Build Status](https://api.travis-ci.org/PO-21/QtReports.svg?branch=master)](https://travis-ci.org/PO-21/QtReports) | [![Build Status](https://api.travis-ci.org/PO-21/QtReports.svg?branch=develop)](https://travis-ci.org/PO-21/QtReports)
-[![Coverage Status](https://coveralls.io/repos/PO-21/QtReports/badge.svg?branch=master&service=github)](https://coveralls.io/github/PO-21/QtReports?branch=master) | [![Coverage Status](https://coveralls.io/repos/PO-21/QtReports/badge.svg?branch=develop&service=github)](https://coveralls.io/github/PO-21/QtReports?branch=develop)
+[![Build Status](https://api.travis-ci.org/HavenDV/BaseOpenCVQtProject.svg?branch=master)](https://travis-ci.org/HavenDV/BaseOpenCVQtProject) | [![Build Status](https://api.travis-ci.org/HavenDV/BaseOpenCVQtProject.svg?branch=develop)](https://travis-ci.org/HavenDV/BaseOpenCVQtProject)
+[![Coverage Status](https://coveralls.io/repos/HavenDV/BaseOpenCVQtProject/badge.svg?branch=master&service=github)](https://coveralls.io/github/HavenDV/BaseOpenCVQtProject?branch=master) | [![Coverage Status](https://coveralls.io/repos/HavenDV/BaseOpenCVQtProject/badge.svg?branch=develop&service=github)](https://coveralls.io/github/HavenDV/BaseOpenCVQtProject?branch=develop)
 
 # Requirements
 + OpenCV 3.0+
@@ -15,8 +15,8 @@ master (stable) | develop (unstable)
 + gcc-4.8+/clang-3.4+/msvc14+
 
 # Wiki
-+ [Begin](https://github.com/PO-21/QtReports/wiki)
++ [Begin](https://github.com/HavenDV/BaseOpenCVQtProject/wiki)
 
-# Contacts [![Gitter](https://badges.gitter.im/PO-21/QtReports.svg)](https://gitter.im/PO-21/QtReports?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-* [Gitter](https://gitter.im/PO-21/QtReports?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
-* [Doc](http://po-21.github.io/)
+# Contacts [![Gitter](https://badges.gitter.im/HavenDV/BaseOpenCVQtProject.svg)](https://gitter.im/HavenDV/BaseOpenCVQtProject?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+* [Gitter](https://gitter.im/HavenDV/BaseOpenCVQtProject?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+* [Doc](http://havendv.github.io/)
