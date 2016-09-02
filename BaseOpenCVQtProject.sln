@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tests", "tests.vcxproj", "{917BBF97-39FB-46E2-846B-6F5975C11336}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "library", "library\library.vcxproj", "{7ED7D959-EB69-47C8-8601-C093D68D005F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tests", "tests\tests.vcxproj", "{917BBF97-39FB-46E2-846B-6F5975C11336}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7ED7D959-EB69-47C8-8601-C093D68D005F} = {7ED7D959-EB69-47C8-8601-C093D68D005F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +18,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ED7D959-EB69-47C8-8601-C093D68D005F}.Debug|x64.ActiveCfg = Debug|x64
+		{7ED7D959-EB69-47C8-8601-C093D68D005F}.Debug|x64.Build.0 = Debug|x64
+		{7ED7D959-EB69-47C8-8601-C093D68D005F}.Debug|x86.ActiveCfg = Debug|Win32
+		{7ED7D959-EB69-47C8-8601-C093D68D005F}.Debug|x86.Build.0 = Debug|Win32
+		{7ED7D959-EB69-47C8-8601-C093D68D005F}.Release|x64.ActiveCfg = Release|x64
+		{7ED7D959-EB69-47C8-8601-C093D68D005F}.Release|x64.Build.0 = Release|x64
+		{7ED7D959-EB69-47C8-8601-C093D68D005F}.Release|x86.ActiveCfg = Release|Win32
+		{7ED7D959-EB69-47C8-8601-C093D68D005F}.Release|x86.Build.0 = Release|Win32
 		{917BBF97-39FB-46E2-846B-6F5975C11336}.Debug|x64.ActiveCfg = Debug|x64
 		{917BBF97-39FB-46E2-846B-6F5975C11336}.Debug|x64.Build.0 = Debug|x64
 		{917BBF97-39FB-46E2-846B-6F5975C11336}.Debug|x86.ActiveCfg = Debug|Win32

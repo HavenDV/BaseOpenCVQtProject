@@ -1,5 +1,6 @@
 ﻿#include <QTest>
 #include <opencv2/videoio.hpp>
+#include <firstclass.hpp>
 #include "test_firstclass.hpp"
 
 Test_FirstClass::Test_FirstClass( QObject * parent ) :
@@ -16,6 +17,12 @@ void    Test_FirstClass::engine()
     //qDebug() << endl << "Used report: " << reportPath;
     cv::VideoCapture capture( cv::CAP_ANY );
     QCOMPARE( capture.isOpened(), true );
+
+    base::Camera camera;
+    QCOMPARE( camera.isEmpty(), true );
+
+    base::CameraPtr cameraPtr;
+    QCOMPARE( cameraPtr.operator bool(), false );
 }
 
 void    Test_FirstClass::open() {
