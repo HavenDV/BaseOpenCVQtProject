@@ -1,6 +1,6 @@
 # Ubuntu 14.04 Trusty support
-sudo: required
-dist: trusty
+#sudo: required  # options: [required|false] default: ?
+#dist: trusty
 
 language: cpp
 
@@ -9,10 +9,10 @@ addons:
     sources:
     # add PPAs with more up-to-date toolchains
     - ubuntu-toolchain-r-test
-    - llvm-toolchain-trusty
+    - llvm-toolchain-precise-3.6
+    #llvm-toolchain-trusty
     packages:
     # install toolchains
-    - gcc-5
     - g++-5
     - clang-3.6
 
@@ -39,17 +39,16 @@ matrix:
    - os: linux
      compiler: gcc
      env: BUILD_TYPE=coverage
+#env: COMPILER=g++-5
 
-#sudo: false
-  
 cache:
   apt: true
-  directories:
-    - $HOME/.cache/pip
-    - $HOME/.cache/http
-    - /home/travis/.cache/pip
-    - /home/travis/.cache/pip/http
-    - /var/cache/apt/archives/
+#  directories:
+#    - $HOME/.cache/pip
+#    - $HOME/.cache/http
+#    - /home/travis/.cache/pip
+#    - /home/travis/.cache/pip/http
+#    - /var/cache/apt/archives/
 
 branches:
   only:
@@ -78,8 +77,14 @@ notifications:
 #    - qt5-default
 
 before_install:
+#  - wget -nv -O - http://llvm.org/apt/llvm-snapshot.gpg.key | sudo apt-key add -
+#  - sudo apt-add-repository -y 'deb http://llvm.org/apt/trusty llvm-toolchain-trusty-3.6 main'
+#  - sudo apt-add-repository -y 'deb http://llvm.org/apt/trusty llvm-toolchain-trusty-3.7 main'
+#  - sudo apt-add-repository -y 'deb http://llvm.org/apt/trusty llvm-toolchain-trusty-3.8 main'
+#  - sudo apt-get update -qq
+#  - sudo apt-get install -qq -y clang-3.6 clang-3.7 clang-3.8
 #  - sudo sh .travis/${TRAVIS_OS_NAME}/before_install.sh
-#  - sudo sh .travis/${TRAVIS_OS_NAME}/${CC}/before_install.sh
+#  - sudo sh .travis/${TRAVIS_OS_NAME}/${CC}/before_install.s	h
  
 install:
 #  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8" GCOV="gcov-4.8"; fi
