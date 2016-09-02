@@ -1,27 +1,17 @@
-QT += core gui sql widgets printsupport testlib
+QT += core gui testlib
 
-TARGET = qtreportslib_tests
+TARGET = tests
 TEMPLATE = app
 CONFIG += release c++11
-INCLUDEPATH += ../../qtreportslib
-LIBPATH     += ../../qtreportslib
-LIBS += -L../../qtreportslib
-LIBS   += -lqtreportslib
+#INCLUDEPATH += ../../qtreportslib
+#LIBPATH     += ../../qtreportslib
+#LIBS += -L../../qtreportslib
+#LIBS   += -lqtreportslib
 
 SOURCES += main.cpp \
-    test_engine.cpp \
-    test_parser.cpp \
-    test_convertertoqwidget.cpp \
-    test_convertertopdf.cpp \
-    test_convertertohtml.cpp \
-    test_field.cpp
+    test_firstclass.cpp
 
-HEADERS  += test_engine.hpp \
-    test_parser.hpp \
-    test_convertertoqwidget.hpp \
-    test_convertertopdf.hpp \
-    test_convertertohtml.hpp \
-    test_field.hpp
+HEADERS  += test_firstclass.hpp
 
 QMAKE_CXXFLAGS += -std=c++11
 

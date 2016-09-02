@@ -16,19 +16,6 @@ private slots:
     void    open();
     void    close();
 
-    void    setParameters();
-    void    setConnection();
-    void    setDataSource();
-    void    setQuery();
-    void    addScript();
-    void    setDataModel();
-
-    void    createPDF();
-    void    createHTML();
-    void    createWidget();
-    void    createLayout();
-    void    print();
-
     void    isOpened();
     void    getReport();
     void    getLastError();
