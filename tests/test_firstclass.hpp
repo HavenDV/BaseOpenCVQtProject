@@ -1,14 +1,14 @@
 ﻿#pragma once
-#ifndef TEST_ENGINE_HPP
-#define TEST_ENGINE_HPP
+#ifndef TEST_FIRSTCLASS_HPP
+#define TEST_FIRSTCLASS_HPP
 #include <QObject>
 
-class Test_Engine : public QObject {
+class Test_FirstClass : public QObject {
     Q_OBJECT
 
 public:
-    explicit Test_Engine( QObject * parent = Q_NULLPTR );
-    ~Test_Engine();
+    explicit Test_FirstClass( QObject * parent = Q_NULLPTR );
+    ~Test_FirstClass();
 
 private slots:
     void    engine();
@@ -22,4 +22,4 @@ private slots:
 
 };
 
-#endif // TEST_ENGINE_HPP
+#endif // TEST_FIRSTCLASS_HPP

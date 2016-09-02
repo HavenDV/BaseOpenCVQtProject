@@ -2,12 +2,12 @@
 #include <opencv2/videoio.hpp>
 #include "test_firstclass.hpp"
 
-Test_Engine::Test_Engine( QObject * parent ) :
+Test_FirstClass::Test_FirstClass( QObject * parent ) :
     QObject( parent ) {}
 
-Test_Engine::~Test_Engine() {}
+Test_FirstClass::~Test_FirstClass() {}
 
-void    Test_Engine::engine()
+void    Test_FirstClass::engine()
 {
     cv::VideoCapture emptyCapture;
     QCOMPARE( emptyCapture.isOpened(), false );
@@ -18,7 +18,7 @@ void    Test_Engine::engine()
     QCOMPARE( capture.isOpened(), true );
 }
 
-void    Test_Engine::open() {
+void    Test_FirstClass::open() {
     /*
     qtreports::Engine engine;
     QCOMPARE( engine.open( "" ), false );
@@ -35,7 +35,7 @@ void    Test_Engine::open() {
     */
 }
 
-void    Test_Engine::close()
+void    Test_FirstClass::close()
 {
     /*
     QString reportPath = QFINDTESTDATA( "default.qreport" );
@@ -49,7 +49,7 @@ void    Test_Engine::close()
     */
 }
 
-void    Test_Engine::isOpened()
+void    Test_FirstClass::isOpened()
 {
     /*
     qtreports::Engine engine;
@@ -63,7 +63,7 @@ void    Test_Engine::isOpened()
     */
 }
 
-void    Test_Engine::getReport()
+void    Test_FirstClass::getReport()
 {
     /*
     qtreports::Engine engine;
@@ -84,7 +84,7 @@ void    Test_Engine::getReport()
     */
 }
 
-void    Test_Engine::getLastError()
+void    Test_FirstClass::getLastError()
 {
     //qtreports::Engine engine;
 
