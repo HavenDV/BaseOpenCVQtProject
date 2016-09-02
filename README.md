@@ -1,5 +1,5 @@
-# QtReports [![Language](https://img.shields.io/badge/language-C++11-blue.svg)](https://github.com/PO-21/QtReports/search?l=cpp) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/PO-21/QtReports/blob/master/LICENSE.txt) [![Requirements](https://img.shields.io/badge/requirements-Qt5-red.svg)](https://github.com/PO-21/QtReports/blob/master/CMakeLists.txt)
-Reimplementation of JasperReports in Qt
+# BaseOpenCVQtProject [![Language](https://img.shields.io/badge/language-C++11-blue.svg)](https://github.com/PO-21/QtReports/search?l=cpp) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/PO-21/QtReports/blob/master/LICENSE.txt) [![Requirements](https://img.shields.io/badge/requirements-OpenCV3+Qt5-red.svg)](https://github.com/PO-21/QtReports/blob/master/CMakeLists.txt)
+Base OpenCV 3 Project with tests, doc and examples.
 
 Branches
 ========
@@ -10,6 +10,7 @@ master (stable) | develop (unstable)
 [![Coverage Status](https://coveralls.io/repos/PO-21/QtReports/badge.svg?branch=master&service=github)](https://coveralls.io/github/PO-21/QtReports?branch=master) | [![Coverage Status](https://coveralls.io/repos/PO-21/QtReports/badge.svg?branch=develop&service=github)](https://coveralls.io/github/PO-21/QtReports?branch=develop)
 
 # Requirements
++ OpenCV 3.0+
 + Qt 5.0+
 + gcc-4.8+/clang-3.4+/msvc14+
 
